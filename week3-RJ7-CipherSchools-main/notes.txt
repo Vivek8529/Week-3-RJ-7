@@ -1,0 +1,27 @@
+session - in certain time frame
+can store in duration also
+reload when restarted
+session stored in backend
+different backend with copy to handle load
+frontend can connect to any one according to situaton
+session based login can create problem when data stored in one and frontend rendering from other database due to load
+
+JWT - jwt.io
+jwt tokens
+3 parts
+separated by full stop (.)
+- header : contains the information of algorithm used to encrypt. this is readable
+- body (payload) : contain the information which has been encrypted in jwt token. this is readable
+- secret key :  used to authenticate the data
+
+Local Storage - key-value pairs
+can't store objects or arrays in local Storage
+
+convert to string and store
+localStorage.setItem("name", JSON.stringify({name:"ABC", age: 22})) 
+it will convert object into string
+
+JSON.parse(localStorage.getItem("name"))
+convert string to object
+
+info of user which will not share with website with the token, which will used for authentication
